@@ -1,0 +1,181 @@
+@charset "UTF-8";
+
+a,
+body,
+html {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0
+}
+
+a,
+body,
+hr,
+html {
+    padding: 0
+}
+
+address,
+article,
+audio,
+b,
+body,
+canvas,
+caption,
+dd,
+div,
+dl,
+dt,
+em,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+label,
+li,
+menu,
+nav,
+object,
+ol,
+p,
+pre,
+section,
+small,
+span,
+strong,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+ul,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: 0 0
+}
+
+a {
+    font-size: 100%;
+    vertical-align: baseline;
+    background: 0 0
+}
+
+@font-face {
+    font-family: font;
+    src: url(/font/font.eot?47674687);
+    src: url(/font/font.eot?47674687#iefix) format("embedded-opentype"), url(/font/font.woff?47674687) format("woff"), url(/font/font.ttf?47674687) format("truetype"), url(/font/font.svg?47674687#font) format("svg");
+    font-weight: 400;
+    font-style: normal
+}
+
+.container{
+  position: relative;
+  max-width: 100%;
+  height: 20em;
+  margin: 0 auto;
+  text-align: center;
+  background: #aaaaaa;
+}
+
+.huwahuwa{
+  width: 123px;
+  font-size: .8em;
+  min-height: 51px;
+  padding: 2px 0;
+  border-radius: 3px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);/* 追加されたコード */
+  /* margin-left: -61.5px; */
+  background: rgba(255, 255, 255, 0.8);
+  -webkit-animation-name: free-initial-gacha-popup-float;
+  animation-name: free-initial-gacha-popup-float;
+  -webkit-animation-duration: .4s;
+  animation-duration: .4s;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.huwahuwa::before{
+  content: '';
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: -16px;
+  z-index: 1;
+  transform: translate(-50%, 0);
+  width: 0;
+  height: 0;
+  border-left: 36px solid transparent;
+  border-right: 36px solid transparent;
+  border-top: 18px solid #fff;
+  border-radius: 5px;
+}
+
+.huwahuwa::after{
+  content: '';
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: -14px;
+  z-index: 2;
+  transform: translate(-50%, 0);
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 15px solid #0000cc;
+  border-radius: 5px;
+}
+
+.huwahuwa .time{
+  color: #000000;
+}
+
+.huwahuwa .txt{
+  font-weight: bold;
+}
+
+.huwahuwa .txt dt{
+  color: #0066ff;
+}
+
+.huwahuwa .txt dd{
+  color: #0000cc;
+  font-size: 1em;
+}
+
+@keyframes free-initial-gacha-popup-float {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
