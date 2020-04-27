@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>huwahuwa</title>
     <link rel="stylesheet" type="text/css" href="./assets/css/css.css">
+    <script type="text/javascript" src="./assets/src/instafeed.min.js"></script>
   </head>
   <body>
     <div class="container">
@@ -16,6 +17,16 @@
         </dl>
       </div>
       <!-- end huwahuwa -->
+      <!-- intafeed -->
+      <div id="instafeed"></div>
+
+      <script type="text/javascript">
+        let token = 'IGQVJWQUpWbV9xLU1MeGUyM0FEWl85ZAzVOTVl3ZAGZAfdjJldnZA4a0hOT3VTX2hFM0NkYjZAEUWZAsOVlMdThFLVVuTHRKUXpkQ0ozbXpsQUwwcDlfWFJiMnNhZAXc2XzVFajY4UzBRQ0s5U2FWZAjJnMThIaQZDZD'
+        var feed = new Instafeed({
+          accessToken: token;
+        });
+        feed.run();
+      </script>
     </div>
   </body>
 </html>
