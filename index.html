@@ -17,16 +17,19 @@
         </dl>
       </div>
       <!-- end huwahuwa -->
-      <!-- intafeed -->
-      <div id="instafeed"></div>
 
-      <script type="text/javascript">
-        let token = 'IGQVJWQUpWbV9xLU1MeGUyM0FEWl85ZAzVOTVl3ZAGZAfdjJldnZA4a0hOT3VTX2hFM0NkYjZAEUWZAsOVlMdThFLVVuTHRKUXpkQ0ozbXpsQUwwcDlfWFJiMnNhZAXc2XzVFajY4UzBRQ0s5U2FWZAjJnMThIaQZDZD';
-        var feed = new Instafeed({
-          accessToken: token;
-        });
-        feed.run();
-      </script>
     </div>
+    <!-- intafeed -->
+    <div id="instafeed" class="instafeeds"></div>
+
+    <script type="text/javascript">
+      let token = 'IGQVJWQUpWbV9xLU1MeGUyM0FEWl85ZAzVOTVl3ZAGZAfdjJldnZA4a0hOT3VTX2hFM0NkYjZAEUWZAsOVlMdThFLVVuTHRKUXpkQ0ozbXpsQUwwcDlfWFJiMnNhZAXc2XzVFajY4UzBRQ0s5U2FWZAjJnMThIaQZDZD';
+      var feed = new Instafeed({
+        accessToken: token,
+        limit: 4,
+        sortBy: 'most-recent'
+      });
+      feed.run();
+    </script>
   </body>
 </html>

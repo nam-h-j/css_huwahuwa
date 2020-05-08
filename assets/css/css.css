@@ -179,3 +179,37 @@ a {
     transform: translateY(-10px);
   }
 }
+
+.instafeeds{
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-between;
+  grid-gap: 10px;
+}
+
+.instafeeds a{
+  position: relative;
+  text-align: center;
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #eeeeee;
+  overflow: hidden
+}
+
+.instafeeds a::after{
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.instafeeds a img{
+  position: absolute;
+  width: auto;
+  height: 100%;
+  right: 50%;
+  transform: translate(50%, 0);
+  background: #eeeeee;
+}
